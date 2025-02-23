@@ -85,6 +85,33 @@ To get started with the bot, follow these steps:
 
 ```
 
+```
+## 📌 Configuration Guide for `configs.json`
+
+### 1. General Settings
+- **timeZone**: Set the time zone (e.g., "en-US" for US English formatting).
+- **rotateProxy**: Enable (`true`) or disable (`false`) proxy rotation.
+- **skipInvalidProxy**: Skip invalid proxies (`true`) or stop execution if a proxy fails (`false`).
+- **proxyRotationInterval**: Set the interval (in minutes) before switching to a new proxy.
+- **delayEachAccount**: Specify the delay range (in seconds) between each account's execution. Example: `[1, 1]` means 1 second.
+- **timeToRestartAllAccounts**: Set the restart interval for all accounts in seconds (e.g., `86400` for 24 hours).
+- **howManyAccountsRunInOneTime**: Define the number of accounts that should run simultaneously.
+
+### 2. Transaction Settings
+- **amountToSend**: Define the minimum and maximum amount of tokens to send in each transaction. Example: `[0.001, 0.005]`.
+- **sendTokenTo**: List of recipient wallet addresses for token transfers. Add multiple addresses as needed.
+
+### 3. Notes
+- If `rotateProxy` is `true`, ensure `proxies.txt` is properly configured.
+- Use an appropriate `delayEachAccount` value to avoid bans or rate limits.
+- Transactions will be sent to addresses listed in `sendTokenTo` in a randomized order.
+- Ensure that the total funds in each wallet are sufficient to cover the transaction fees and token transfers.
+
+💡 *Modify these values based on your requirements to optimize performance and avoid detection.*
+```
+
+
+
 ### 2. `privateKeys.txt` 🗂️ - Get it from here >>> [Link](https://t.me/KeoAirDropFreeNe/257/6879)
 
 - Wallets generator: [Link](https://github.com/MeoMunDep/Automatic-Ultimate-Create-Wallets-for-Airdrop)
