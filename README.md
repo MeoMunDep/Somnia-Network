@@ -85,7 +85,7 @@ To get started with the bot, follow these steps:
 
 ```
 
-```
+
 ## 📌 Configuration Guide for `configs.json`
 
 ### 1. General Settings
@@ -108,9 +108,8 @@ To get started with the bot, follow these steps:
 - Ensure that the total funds in each wallet are sufficient to cover the transaction fees and token transfers.
 
 💡 *Modify these values based on your requirements to optimize performance and avoid detection.*
-```
 
-
+---
 
 ### 2. `privateKeys.txt` 🗂️ - Get it from here >>> [Link](https://t.me/KeoAirDropFreeNe/257/6879)
 
@@ -125,6 +124,7 @@ To get started with the bot, follow these steps:
 
 __Note: Each row represents an account. The faucet only works with one IP per account, but sending tokens can use multiple IPs. Just multiply your proxies. LOL__ 
 
+---
 
 ### 3. `proxies.txt` 🌐 - Proxy is an option. If you have one, fill it in; otherwise, leave it blank.
 
