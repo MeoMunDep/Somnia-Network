@@ -9,6 +9,7 @@
   "amountToSend": [0.01, 0.05],
   "referralCode": "4BB70DFF",
   "autoReferrals": true,
+  "setUsername": true,
 
   "sendTokenTo": [
     "0xe81E898F01Bc49B4A567628A6876A68ab1Bc4646",
