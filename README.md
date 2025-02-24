@@ -30,8 +30,10 @@ To get started with the bot, follow these steps:
   "proxyRotationInterval": 2,
   "delayEachAccount": [1, 1],
   "timeToRestartAllAccounts": 86400,
-  "howManyAccountsRunInOneTime": 100,
-  "amountToSend": [0.001, 0.005],
+  "howManyAccountsRunInOneTime": 1,
+  "amountToSend": [0.01, 0.05],
+  "referralCode": "4BB70DFF",
+  "autoReferrals": true,
 
   "sendTokenTo": [
     "0xe81E898F01Bc49B4A567628A6876A68ab1Bc4646",
@@ -82,7 +84,6 @@ To get started with the bot, follow these steps:
     "0x00ad8f0dd899e149224103917673929d2F53cDE2"
   ]
 }
-
 ```
 
 
@@ -96,6 +97,8 @@ To get started with the bot, follow these steps:
 - **delayEachAccount**: Specify the delay range (in seconds) between each account's execution. Example: `[1, 1]` means 1 second.
 - **timeToRestartAllAccounts**: Set the restart interval for all accounts in seconds (e.g., `86400` for 24 hours).
 - **howManyAccountsRunInOneTime**: Define the number of accounts that should run simultaneously.
+- **autoReferrals**: Enable (`true`) or disable (`false`) auto refer feature.
+- **referralCode**: Your referral code to refer, do not change it if you guys want to support me.
 
 ### 2. Transaction Settings
 - **amountToSend**: Define the minimum and maximum amount of tokens to send in each transaction. Example: `[0.001, 0.005]`.
