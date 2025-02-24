@@ -34,6 +34,7 @@ To get started with the bot, follow these steps:
   "amountToSend": [0.01, 0.05],
   "referralCode": "4BB70DFF",
   "autoReferrals": true,
+  "setUsername": false,
 
   "sendTokenTo": [
     "0xe81E898F01Bc49B4A567628A6876A68ab1Bc4646",
@@ -98,6 +99,7 @@ To get started with the bot, follow these steps:
 - **timeToRestartAllAccounts**: Set the restart interval for all accounts in seconds (e.g., `86400` for 24 hours).
 - **howManyAccountsRunInOneTime**: Define the number of accounts that should run simultaneously.
 - **autoReferrals**: Enable (`true`) or disable (`false`) auto refer feature.
+- **setUsername**: Enable (`true`) or disable (`false`) auto set username feature.
 - **referralCode**: Your referral code to refer, do not change it if you guys want to support me.
 
 ### 2. Transaction Settings
