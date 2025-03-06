@@ -1,7 +1,7 @@
 {
   "timeZone": "en-US",
   "rotateProxy": false,
-  "skipInvalidProxy": false,
+  "skipInvalidProxy": true,
   "proxyRotationInterval": 2,
   "delayEachAccount": [1, 1],
   "timeToRestartAllAccounts": 86400,
@@ -10,6 +10,7 @@
   "referralCode": "4BB70DFF",
   "autoReferrals": true,
   "setUsername": true,
+  "faucetToken": true,
 
   "sendTokenTo": [
     "0xe81E898F01Bc49B4A567628A6876A68ab1Bc4646",
