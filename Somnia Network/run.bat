@@ -3,7 +3,7 @@ title "Somnia network bot by @meomundep"
 
 (for %%F in (privateKeys.txt proxies.txt configs.json) do (
     if not exist %%F (
-        echo Tao file: %%F
+        echo Created file: %%F
         if "%%F"=="configs.json" (
             (
                 echo {
