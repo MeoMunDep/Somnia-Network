@@ -147,4 +147,60 @@ socks5://user:password@host:port
 > You need to `cd` to the file after extract it.
 > To run the bot, use the following command: `cd "somnia-network-main/somnia network"; node meomundep`
 
+## 📦 Running with Docker
+
+If you prefer to run the bot in a Docker container, follow these steps:
+
+1. Install [Docker](https://www.docker.com/get-started) if you haven't already.
+2. Clone the repository:
+   ```sh
+   git clone https://github.com/MeoMunDep/somnia-network.git
+   cd somnia-network
+   ```
+3. Build the Docker image:
+   ```sh
+   docker build -t somnia-bot .
+   ```
+4. Run the container:
+   ```sh
+   docker run -d --name somnia-bot \
+     -v $(pwd)/configs.json:/app/configs.json \
+     -v $(pwd)/privateKeys.txt:/app/privateKeys.txt \
+     -v $(pwd)/proxies.txt:/app/proxies.txt \
+     somnia-bot
+   ```
+5. To check logs:
+   ```sh
+   docker logs -f somnia-bot
+   ```
+6. To stop the bot:
+   ```sh
+   docker stop somnia-bot
+   ```
+
+## 🔄 Updating the Code with Git
+
+To keep your bot updated, use Git to pull the latest changes:
+
+1. Navigate to the bot directory:
+   ```sh
+   cd somnia-network
+   ```
+2. Fetch the latest updates:
+   ```sh
+   git pull origin main
+   ```
+3. If using Docker, rebuild and restart the container:
+   ```sh
+   docker build -t somnia-bot .
+   docker stop somnia-bot && docker rm somnia-bot
+   docker run -d --name somnia-bot \
+     -v $(pwd)/configs.json:/app/configs.json \
+     -v $(pwd)/privateKeys.txt:/app/privateKeys.txt \
+     -v $(pwd)/proxies.txt:/app/proxies.txt \
+     somnia-bot
+   ```
+
+This ensures you're always running the latest version of the bot.
+
 🎇Enjoy!
