@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  somnia-bot:
+    build: .
+    container_name: somnia_bot
+    volumes:
+      - ./configs.json:/app/configs.json
+      - ./privateKeys.txt:/app/privateKeys.txt
+      - ./proxies.txt:/app/proxies.txt
+    restart: unless-stopped
