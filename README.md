@@ -10,6 +10,8 @@
 
 ## 🚀 Getting Started
 
+- Run 'run.bat' or 'run.sh' to start the process immediately.
+
 To get started with the bot, follow these steps:
 
 0. **Dowload NodeJS to run the bot**
