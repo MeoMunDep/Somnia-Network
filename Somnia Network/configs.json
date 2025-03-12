@@ -6,13 +6,28 @@
   "delayEachAccount": [1, 1],
   "timeToRestartAllAccounts": 86400,
   "howManyAccountsRunInOneTime": 1,
-  "amountToSend": [0.01, 0.05],
-  "referralCode": "4BB70DFF",
+
   "autoReferrals": true,
+  "refererCodes": ["4BB70DFF"],
+
   "setUsername": true,
+
   "faucetToken": true,
 
-  "sendTokenTo": [
+  "amountToSend": [0.01, 0.05],
+
+  "createNewToken": true,
+
+  "swapToken": true,
+  "amountOfPingForPong": 0.0001,
+  "amountOfPongForPing": 0.0001,
+
+  "mintToken": true,
+  "slippage": 2.5,
+  "amountOfPingToMint": 100,
+  "amountOfPongToMint": 100,
+
+  "sendAndMintTokenTo": [
     "0xe81E898F01Bc49B4A567628A6876A68ab1Bc4646",
     "0x5A0C7eB124B3ADE21D171BBBa97E5899e2fEdBE1",
     "0x445456AABE6E892a1280b98754b0f6AF10440c8a",
