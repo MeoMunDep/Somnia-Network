@@ -44,22 +44,20 @@ create_default_configs() {
   "autoReferrals": true,
   "refererCodes": ["4BB70DFF"],
 
-  "setUsername": true,
+  "setUsername": false,
 
   "faucetToken": true,
 
   "amountToSend": [0.01, 0.05],
 
-  "createNewToken": true,
+  "createNewToken": false,
 
   "swapToken": true,
-  "amountOfPingForPong": 0.0001,
-  "amountOfPongForPing": 0.0001,
+  "slippage": 2.5,
+  "amountOfPingForPong": 0.01,
+  "amountOfPongForPing": 0.01,
 
   "mintToken": true,
-  "slippage": 2.5,
-  "amountOfPingToMint": 100,
-  "amountOfPongToMint": 100,
 
   "sendAndMintTokenTo": [
     "0xe81E898F01Bc49B4A567628A6876A68ab1Bc4646",
