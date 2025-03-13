@@ -28,17 +28,31 @@ To get started with the bot, follow these steps:
 {
   "timeZone": "en-US",
   "rotateProxy": false,
-  "skipInvalidProxy": false,
+  "skipInvalidProxy": true,
   "proxyRotationInterval": 2,
   "delayEachAccount": [1, 1],
   "timeToRestartAllAccounts": 86400,
   "howManyAccountsRunInOneTime": 1,
-  "amountToSend": [0.01, 0.05],
-  "referralCode": "4BB70DFF",
+
   "autoReferrals": true,
+  "refererCodes": ["4BB70DFF"],
+
   "setUsername": false,
 
-  "sendTokenTo": [
+  "faucetToken": true,
+
+  "amountToSend": [0.01, 0.05],
+
+  "createNewToken": false,
+
+  "swapToken": true,
+  "slippage": 2.5,
+  "amountOfPingForPong": 0.01,
+  "amountOfPongForPing": 0.01,
+
+  "mintToken": true,
+
+  "sendAndMintTokenTo": [
     "0xe81E898F01Bc49B4A567628A6876A68ab1Bc4646",
     "0x5A0C7eB124B3ADE21D171BBBa97E5899e2fEdBE1",
     "0x445456AABE6E892a1280b98754b0f6AF10440c8a",
@@ -93,26 +107,26 @@ To get started with the bot, follow these steps:
 ## 📌 Configuration Guide for `configs.json`
 
 ### 1. General Settings
-- **timeZone**: Set the time zone (e.g., "en-US" for US English formatting).
-- **rotateProxy**: Enable (`true`) or disable (`false`) proxy rotation.
-- **skipInvalidProxy**: Skip invalid proxies (`true`) or stop execution if a proxy fails (`false`).
-- **proxyRotationInterval**: Set the interval (in minutes) before switching to a new proxy.
-- **delayEachAccount**: Specify the delay range (in seconds) between each account's execution. Example: `[1, 1]` means 1 second.
-- **timeToRestartAllAccounts**: Set the restart interval for all accounts in seconds (e.g., `86400` for 24 hours).
-- **howManyAccountsRunInOneTime**: Define the number of accounts that should run simultaneously.
-- **autoReferrals**: Enable (`true`) or disable (`false`) auto refer feature.
-- **setUsername**: Enable (`true`) or disable (`false`) auto set username feature.
-- **referralCode**: Your referral code to refer, do not change it if you guys want to support me.
 
-### 2. Transaction Settings
-- **amountToSend**: Define the minimum and maximum amount of tokens to send in each transaction. Example: `[0.001, 0.005]`.
-- **sendTokenTo**: List of recipient wallet addresses for token transfers. Add multiple addresses as needed.
-
-### 3. Notes
-- If `rotateProxy` is `true`, ensure `proxies.txt` is properly configured.
-- Use an appropriate `delayEachAccount` value to avoid bans or rate limits.
-- Transactions will be sent to addresses listed in `sendTokenTo` in a randomized order.
-- Ensure that the total funds in each wallet are sufficient to cover the transaction fees and token transfers.
+- **timeZone**: Set the time zone (e.g., "en-US" for US English formatting).  
+- **rotateProxy**: Enable (`true`) or disable (`false`) proxy rotation.  
+- **skipInvalidProxy**: Skip invalid proxies (`true`) or stop execution if a proxy fails (`false`).  
+- **proxyRotationInterval**: Set the interval (in minutes) before switching to a new proxy.  
+- **delayEachAccount**: Define the delay range (in seconds) before switching between accounts. Example: `[1, 1]` means each account will wait exactly 1 second before running.  
+- **timeToRestartAllAccounts**: Set the restart interval for all accounts in seconds (e.g., `86400` for 24 hours).  
+- **howManyAccountsRunInOneTime**: Define the number of accounts that should run simultaneously.  
+- **autoReferrals**: Enable (`true`) or disable (`false`) auto refer feature.  
+- **referralCodes**: List of referral codes to use for auto-referrals. Example: `["4BB70DFF"]`.  
+- **setUsername**: Enable (`true`) or disable (`false`) auto set username feature.  
+- **faucetToken**: Enable (`true`) or disable (`false`) claiming free tokens from the faucet.  
+- **amountToSend**: Specify the range of token amounts to send in transactions. Example: `[0.01, 0.05]` means a random amount between 0.01 and 0.05 tokens will be sent.  
+- **createNewToken**: Enable (`true`) or disable (`false`) the creation of new tokens.  
+- **swapToken**: Enable (`true`) or disable (`false`) token swapping functionality.  
+- **slippage**: Set the acceptable slippage percentage for token swaps (e.g., `2.5` means a 2.5% tolerance).  
+- **amountOfPingForPong**: Specify the amount of the first token (Ping) to swap for the second token (Pong).  
+- **amountOfPongForPing**: Specify the amount of the second token (Pong) to swap for the first token (Ping).  
+- **mintToken**: Enable (`true`) or disable (`false`) the minting of new tokens.  
+- **sendAndMintTokenTo**: List of wallet addresses that will receive the minted and sent tokens.  
 
 💡 *Modify these values based on your requirements to optimize performance and avoid detection.*
 
@@ -121,12 +135,12 @@ To get started with the bot, follow these steps:
 ### 2. `privateKeys.txt` 🗂️ - Get it from here >>> [Link](https://t.me/KeoAirDropFreeNe/257/6879)
 
 - Wallets generator: [Link](https://github.com/MeoMunDep/Automatic-Ultimate-Create-Wallets-for-Airdrop)
-- EVM privatekey
+
 
 ```txt
-0x...
-0x...
-0x...
+EVM privatekey
+EVM privatekey
+EVM privatekey
 ```
 
 __Note: Each row represents an account. The faucet only works with one IP per account, but sending tokens can use multiple IPs. Just multiply your proxies. LOL__ 
