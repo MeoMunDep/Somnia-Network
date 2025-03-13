@@ -1,10 +1,12 @@
 📞 Contact
 
+> 📱 **For Mobile Users (Termux):** [View the guide here](https://github.com/MeoMunDep/Guides-for-using-my-script-on-termux)
+
 > If you encounter any issues or have questions, feel free to reach out:
 
-- Contact: [Link](t.me/MeoMunDep)
 - Group: [Link](t.me/KeoAirDropFreeNe)
 - Channel: [Link](t.me/KeoAirDropFreeNee)
+- Contact for work: [Link](t.me/MeoMunDep)
 
 > Help me with your referral [Link](https://quest.somnia.network/referrals/4BB70DFF)
 
