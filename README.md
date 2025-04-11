@@ -1,4 +1,4 @@
-📞 Contact
+  📞 Contact
 
 > 📱 **For Mobile Users (Termux):** [View the guide here](https://github.com/MeoMunDep/Guides-for-using-my-script-on-termux)
 
@@ -153,11 +153,17 @@ __Note: Each row represents an account. The faucet only works with one IP per ac
 
 ### 3. `proxies.txt` 🌐 - Proxy is an option. If you have one, fill it in; otherwise, leave it blank.
 
+- [Get it from here](https://www.webshare.io/?referral_code=4l5kb3glsce7)
+
 ```txt
-http://user:password@host:port
-https://user:password@host:port
-socks4://user:password@host:port
-socks5://user:password@host:port
+http://host:port
+https://host:port
+socks4://host:port
+socks5://host:port
+http://user:pass@host:port
+https://user:pass@host:port
+socks4://user:pass@host:port
+socks5://user:pass@host:port
 ```
 
 💡 Usage:
@@ -181,11 +187,7 @@ If you prefer to run the bot in a Docker container, follow these steps:
    ```
 4. Run the container:
    ```sh
-   docker run -d --name somnia-bot \
-     -v $(pwd)/configs.json:/app/configs.json \
-     -v $(pwd)/privateKeys.txt:/app/privateKeys.txt \
-     -v $(pwd)/proxies.txt:/app/proxies.txt \
-     somnia-bot
+   docker run -d --name somnia-bot somnia-bot
    ```
 5. To check logs:
    ```sh
@@ -212,11 +214,7 @@ To keep your bot updated, use Git to pull the latest changes:
    ```sh
    docker build -t somnia-bot .
    docker stop somnia-bot && docker rm somnia-bot
-   docker run -d --name somnia-bot \
-     -v $(pwd)/configs.json:/app/configs.json \
-     -v $(pwd)/privateKeys.txt:/app/privateKeys.txt \
-     -v $(pwd)/proxies.txt:/app/proxies.txt \
-     somnia-bot
+   docker run -d --name somnia-bot somnia-bot
    ```
 
 This ensures you're always running the latest version of the bot.
