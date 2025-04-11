@@ -1,6 +1,10 @@
 @echo off
 title "Somnia network bot by @meomundep"
 
+color 0A
+cd %~dp0
+echo Checking configuration files...
+
 (for %%F in (privateKeys.txt proxies.txt configs.json) do (
     if not exist %%F (
         echo Created file: %%F
@@ -35,6 +39,27 @@ title "Somnia network bot by @meomundep"
         )
     )
 ))
+
+(for %%F in (privateKeys.txt proxies.txt) do (
+    if not exist %%F (
+        type nul > %%F
+        echo Created %%F
+    )
+))
+
+echo Configuration files checked.
+
+echo Checking dependencies...
+if exist "..\node_modules" (
+    echo Using node_modules from parent directory...
+    cd ..
+    CALL npm install user-agents axios colors https-proxy-agent socks-proxy-agent ethers web3 solc
+    cd %~dp0
+) else (
+    echo Installing dependencies in current directory...
+    CALL npm install user-agents axios colors https-proxy-agent socks-proxy-agent ethers web3 solc
+)
+echo Dependencies installation completed!
 
 echo Running meomundep.js...
 node meomundep.js
