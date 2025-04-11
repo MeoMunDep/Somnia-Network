@@ -59,6 +59,7 @@ create_default_configs() {
 
   "mintToken": true,
 
+  "toNewWallet": true,
   "sendAndMintTokenTo": [
     "0xe81E898F01Bc49B4A567628A6876A68ab1Bc4646",
     "0x5A0C7eB124B3ADE21D171BBBa97E5899e2fEdBE1",
