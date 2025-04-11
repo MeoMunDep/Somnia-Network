@@ -5,7 +5,7 @@ GREEN='\033[0;32m'
 YELLOW='\033[1;33m'
 NC='\033[0m' 
 
-echo -ne "\033]0;name Bot by @MeoMunDep\007"
+echo -ne "\033]0;Somnia Bot by @MeoMunDep\007"
 
 
 print_green() {
@@ -128,7 +128,7 @@ fi
 
 check_configs
 
-for file in datas.txt wallets.txt proxies.txt; do
+for file in datas.txt privateKeys.txt proxies.txt; do
     if [ ! -f "$file" ]; then
         touch "$file"
         print_green "Created $file"
@@ -139,7 +139,7 @@ print_green "Configuration files have been checked."
 
 print_yellow "Checking dependencies..."
 cd "$MODULES_DIR"
-npm install user-agents axios colors https-proxy-agent socks-proxy-agent ethers web3 crypto-js ws uuid xlsx readline-sync moment lodash
+npm install user-agents axios colors https-proxy-agent socks-proxy-agent ethers web3 solc
 cd - > /dev/null
 print_green "Dependencies installation completed!"
 
