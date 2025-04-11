@@ -2,10 +2,13 @@ version: '3.8'
 
 services:
   somnia-bot:
-    build: .
-    container_name: somnia_bot
-    volumes:
-      - ./configs.json:/app/configs.json
-      - ./privateKeys.txt:/app/privateKeys.txt
-      - ./proxies.txt:/app/proxies.txt
+    build:
+      context: .
+    container_name: somnia-bot
     restart: unless-stopped
+    volumes:
+      - .:/app
+    environment:
+      - NODE_ENV=production
+    stdin_open: true
+    tty: true
