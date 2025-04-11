@@ -54,6 +54,7 @@ To get started with the bot, follow these steps:
 
   "mintToken": true,
 
+  "toNewWallet": true,
   "sendAndMintTokenTo": [
     "0xe81E898F01Bc49B4A567628A6876A68ab1Bc4646",
     "0x5A0C7eB124B3ADE21D171BBBa97E5899e2fEdBE1",
@@ -128,6 +129,7 @@ To get started with the bot, follow these steps:
 - **amountOfPingForPong**: Specify the amount of the first token (Ping) to swap for the second token (Pong).  
 - **amountOfPongForPing**: Specify the amount of the second token (Pong) to swap for the first token (Ping).  
 - **mintToken**: Enable (`true`) or disable (`false`) the minting of new tokens.  
+- **toNewWallet**: Enable (`true`) or disable (`false`) to send or mint token to new wallet.  
 - **sendAndMintTokenTo**: List of wallet addresses that will receive the minted and sent tokens.  
 
 💡 *Modify these values based on your requirements to optimize performance and avoid detection.*
