@@ -28,7 +28,6 @@ To get started with the bot, follow these steps:
 
 ```json
 {
-  "timeZone": "en-US",
   "rotateProxy": false,
   "skipInvalidProxy": true,
   "proxyRotationInterval": 2,
@@ -56,9 +55,9 @@ To get started with the bot, follow these steps:
 
   "toNewWallet": true,
   "sendAndMintTokenTo": [
-   "your_wallet_address",
-   "your_wallet_address",
-   "your_wallet_address"
+   "your_wallet_addressé_here",
+   "your_wallet_addressé_here",
+   "your_wallet_addressé_here"
   ]
 }
 ```
