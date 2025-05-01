@@ -11,7 +11,6 @@ echo Checking configuration files...
         if "%%F"=="configs.json" (
             (
                 echo {
-                echo   "timeZone": "en-US",
                 echo   "rotateProxy": false,
                 echo   "skipInvalidProxy": true,
                 echo   "proxyRotationInterval": 2,
