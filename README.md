@@ -125,7 +125,7 @@ socks5://user:pass@host:port
 💡 Usage:
 
 > You need to `cd` to the file after extract it.
-> To run the bot, use the following command: `cd "somnia-network-main/somnia network"; node meomundep`
+> To run the bot, use the following command: `cd "somnia-network"; node meomundep`
 
 ## 📦 Running with Docker
 
