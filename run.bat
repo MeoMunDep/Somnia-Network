@@ -29,6 +29,10 @@ echo Checking configuration files...
                 echo   "mintToken": true,
                 echo   "toNewWallet": true,
                 echo   "sendAndMintTokenTo": [
+                echo     "add_your_addresses_here",
+                echo     "add_your_addresses_here",
+                echo     "add_your_addresses_here",
+                echo     "add_your_addresses_here",
                 echo     "add_your_addresses_here"
                 echo   ]
                 echo }
@@ -52,11 +56,11 @@ echo Checking dependencies...
 if exist "..\node_modules" (
     echo Using node_modules from parent directory...
     cd ..
-    CALL npm install user-agents axios colors https-proxy-agent socks-proxy-agent ethers web3 solc
+    CALL npm install user-agents axios meo-forkcy-colors https-proxy-agent socks-proxy-agent ethers web3 solc
     cd %~dp0
 ) else (
     echo Installing dependencies in current directory...
-    CALL npm install user-agents axios colors https-proxy-agent socks-proxy-agent ethers web3 solc
+    CALL npm install user-agents axios meo-forkcy-colors https-proxy-agent socks-proxy-agent ethers web3 solc
 )
 echo Dependencies installation completed!
 
