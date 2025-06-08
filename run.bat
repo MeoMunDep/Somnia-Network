@@ -26,6 +26,7 @@ echo Checking configuration files...
                 echo   "amountOfPingForPong": 0.01,
                 echo   "amountOfPongForPing": 0.01,
                 echo   "faucetToken": true,
+                echo   "doTXonQuills": true,
                 echo   "mintToken": true,
                 echo   "toNewWallet": true,
                 echo   "sendAndMintTokenTo": [
