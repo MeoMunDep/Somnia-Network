@@ -1,4 +1,4 @@
-# 🚀 Somnia Network Bot 🤖
+# 🤖 Somnia Network Bot 
 
 This is an automated bot script designed to interact seamlessly with **Somnia Network** — a decentralized Web3 platform focused on providing users with token faucets, referral rewards, token swapping, minting, and various airdrop opportunities.
 
