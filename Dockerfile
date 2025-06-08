@@ -6,7 +6,7 @@ COPY package*.json ./
 
 RUN npm install
 
-RUN npm install user-agents axios meo-forkcy-colors https-proxy-agent socks-proxy-agent ethers web3 solc
+RUN npm install user-agents axios meo-forkcy-colors meo-forkcy-utils https-proxy-agent socks-proxy-agent ethers web3 solc
 
 COPY . .
 
