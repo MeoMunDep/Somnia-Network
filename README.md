@@ -1,3 +1,21 @@
+# 🚀 Somnia Network Bot 🤖
+
+This is an automated bot script designed to interact seamlessly with **Somnia Network** — a decentralized Web3 platform focused on providing users with token faucets, referral rewards, token swapping, minting, and various airdrop opportunities.
+
+The bot automates common tasks such as claiming free tokens from faucets, managing multiple Ethereum wallets, rotating proxies, handling referrals, swapping tokens with customizable slippage tolerance, minting new tokens, and sending tokens to specified wallets.
+
+✨ **Key Features:**
+
+- 🔑 Effortlessly manage multiple wallet accounts with configurable delays and concurrency.
+- 🌐 Rotate and validate proxies to ensure smooth and anonymous operation.
+- 🎁 Automate referral codes to maximize rewards.
+- 🔄 Customize token-related actions including faucet claims, swaps, minting, and transfers.
+- 🐳 Run easily on any environment with Node.js support and Docker containerization.
+
+By using this bot, users can optimize their participation in Somnia Network’s token distribution and maximize airdrop earnings with minimal manual interaction.
+
+---
+
 # 🚀 Getting Started
 
 * Run `run.bat` or `run.sh` to start immediately.
