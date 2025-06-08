@@ -11,6 +11,8 @@
 
   "setUsername": true,
 
+  "doTXonQuills": true,
+
   "faucetToken": true,
 
   "amountToSend": [0.01, 0.05],
@@ -26,6 +28,10 @@
 
   "toNewWallet": true,
   "sendAndMintTokenTo": [
-    "add_your_wallet_addresses_here"
+    "add_your_wallet_addresses_here",
+    "add_your_wallet_addresses_here",
+    "add_your_wallet_addresses_here",
+    "add_your_wallet_addresses_here",
+    "add_your_wallet_addresses_here",
   ]
 }
