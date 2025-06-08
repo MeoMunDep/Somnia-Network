@@ -43,13 +43,15 @@ create_default_configs() {
   "autoReferrals": true,
   "refererCodes": ["4BB70DFF"],
 
-  "setUsername": false,
+  "setUsername": true,
+
+  "doTXonQuills": true,
 
   "faucetToken": true,
 
   "amountToSend": [0.01, 0.05],
 
-  "createNewToken": false,
+  "createNewToken": true,
 
   "swapToken": true,
   "slippage": 2.5,
@@ -60,11 +62,11 @@ create_default_configs() {
 
   "toNewWallet": true,
   "sendAndMintTokenTo": [
-    "add_your_addresses_here",
-    "add_your_addresses_here",
-    "add_your_addresses_here",
-    "add_your_addresses_here",
-    "add_your_addresses_here"
+    "add_your_wallet_addresses_here",
+    "add_your_wallet_addresses_here",
+    "add_your_wallet_addresses_here",
+    "add_your_wallet_addresses_here",
+    "add_your_wallet_addresses_here",
   ]
 }
 EOL
