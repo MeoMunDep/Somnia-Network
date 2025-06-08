@@ -52,13 +52,15 @@ Download NodeJS to run the bot:
   "autoReferrals": true,
   "refererCodes": ["4BB70DFF"],
 
-  "setUsername": false,
+  "setUsername": true,
+
+  "doTXonQuills": true,
 
   "faucetToken": true,
 
   "amountToSend": [0.01, 0.05],
 
-  "createNewToken": false,
+  "createNewToken": true,
 
   "swapToken": true,
   "slippage": 2.5,
@@ -69,9 +71,11 @@ Download NodeJS to run the bot:
 
   "toNewWallet": true,
   "sendAndMintTokenTo": [
-   "your_wallet_addressé_here",
-   "your_wallet_addressé_here",
-   "your_wallet_addressé_here"
+    "add_your_wallet_addresses_here",
+    "add_your_wallet_addresses_here",
+    "add_your_wallet_addresses_here",
+    "add_your_wallet_addresses_here",
+    "add_your_wallet_addresses_here",
   ]
 }
 ```
